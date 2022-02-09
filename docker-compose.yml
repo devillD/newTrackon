@@ -1,5 +1,5 @@
 services:
-  newtrackon:
+  x:
     container_name: newtrackon
     ports:
       - 8080:8080
