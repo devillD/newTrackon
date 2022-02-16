@@ -14,6 +14,6 @@ WORKDIR /app/newTrackon
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 443
 
-CMD [ "python", "run.py", "--address", "0.0.0.0", "--ignore-ipv6" ]
+CMD [ "python", "run.py", "--address", "0.0.0.0", "--port", "$PORT", "--ignore-ipv6" ]
