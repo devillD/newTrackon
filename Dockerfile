@@ -10,6 +10,8 @@ COPY --chown=newtrackon:newtrackon . /app/newTrackon
 VOLUME /app/newTrackon/data
 WORKDIR /app/newTrackon
 
+COPY . .
+
 EXPOSE 8080
 
-ENTRYPOINT [ "python", "run.py", "--address", "0.0.0.0", "--ignore-ipv6", "--ignore-ipv4" ]
+CMD [ "python", "run.py" ]
