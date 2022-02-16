@@ -14,4 +14,4 @@ WORKDIR /app/newTrackon
 
 COPY . .
 
-CMD [ "python", "run.py", "--ignore-ipv6" ]
+CMD [ "python", "run.py", "--address", "0.0.0.0", "--ignore-ipv6" ]
