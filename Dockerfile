@@ -14,6 +14,4 @@ WORKDIR /app/newTrackon
 
 COPY . .
 
-EXPOSE 443
-
 CMD [ "python", "run.py", "--ignore-ipv6" ]
