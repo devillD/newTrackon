@@ -12,4 +12,4 @@ WORKDIR /app/newTrackon
 
 EXPOSE 8080
 
-ENTRYPOINT [ "python", "run.py", "--address", "0.0.0.0" ]
+ENTRYPOINT [ "python", "run.py", "--address", "0.0.0.0", "--ignore-ipv6", "--ignore-ipv4" ]
