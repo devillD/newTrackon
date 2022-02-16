@@ -14,7 +14,7 @@ if __name__ == "__main__":
         "--address", type=str, help="Address for the flask server", default="127.0.0.1"
     )
     parser.add_argument(
-        "--port", type=int, help="Port for the flask server", default=8080
+        "--port", help="Port for the flask server", default=8080
     )
     parser.add_argument(
         "--ignore-ipv4",
