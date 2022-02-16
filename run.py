@@ -10,10 +10,6 @@ from threading import Thread
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--address", type=str, help="Address for the flask server", default="127.0.0.1"
-    )
     parser.add_argument(
         "--ignore-ipv4",
         help="Ignore newTrackon server IPv4 detection",
@@ -46,5 +42,5 @@ if __name__ == "__main__":
     get_trackerlist_project_list.daemon = True
     get_trackerlist_project_list.start()
 
-    http_server.listen(os.environ.get('PORT', 33507), args.address)
+    http_server.listen(os.environ.get('PORT', 33507))
     IOLoop.instance().start()
