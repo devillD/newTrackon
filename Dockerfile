@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 443
 
-CMD [ "python", "run.py", "--address", "0.0.0.0", "--port", "", "--ignore-ipv6" ]
+CMD [ "python", "run.py", "--address", "0.0.0.0", "--port", "$PORT", "--ignore-ipv6" ]
